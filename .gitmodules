@@ -1,0 +1,3 @@
+[submodule "src/hLibLinux"]
+	path = src/hLibLinux
+	url = https://github.com/qb-0/hLibLinux
