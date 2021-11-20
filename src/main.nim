@@ -34,7 +34,7 @@ proc main =
             let entAddr = memRead(entList + e * 8, ByteAddress)
             if entAddr != 0:
               var ent: Entity
-              if createEntity(memRead(entList + e * 8, ByteAddress), viewMatrix, ent.addr):
+              if createEntity(entAddr, viewMatrix, ent.addr):
                   echo ent.name
                   ent.renderBox()
                   ent.renderHealth()
